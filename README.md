@@ -61,6 +61,12 @@ bash <(wget --no-check-certificate -qO-  https://git.io/lotServerInstall.sh) uni
 - 重新启动 /appex/bin/lotServer.sh restart
 ***
 ***
+# Centos 7开机启动
+````
+echo "/usr/bin/sh /appex/bin/lotServer.sh restart" >> /etc/rc.d/rc.local
+````
+***
+***
 ## 优化内存相关
 #### 机器内存控制建议设置选项
 设置内存低于阈值清理内存，数值不建议过高，并关闭oom自动杀进程功能方式锐速多次启动导致宕机。
