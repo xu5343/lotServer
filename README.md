@@ -61,7 +61,7 @@ bash <(wget --no-check-certificate -qO-  https://git.io/lotServerInstall.sh) uni
 - 重新启动 /appex/bin/lotServer.sh restart
 ***
 ***
-# Centos 7开机启动
+### Centos 7开机启动
 ````
 echo "/usr/bin/sh /appex/bin/lotServer.sh restart" >> /etc/rc.d/rc.local
 ````
